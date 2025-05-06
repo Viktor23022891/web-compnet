@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Test site" />
+    <title>CompNet - Homepage</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <a href="#main-content">Skip to main content</a>
+      
+      <div class="logo">
+        <img src="./img/logo.png" alt="CompNet Logo" />
+      </div>
+      
+      <button id="open-nav-btn" onclick="openNav()" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" /></svg>
+      </button>
+      
+      <nav id="nav">
+        <ul>
+          <li>
+            <button id="close-nav-btn" onclick="closeNav()" aria-label="Close menu">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
+            </button>
+          </li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pcs.html">PCs</a></li>
+          <li><a href="laptops.html">Laptops</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div id="overlay" onclick="closeNav()" aria-hidden="true"></div>
+    </header>
+    
+    <main id="main-content">
+      <section>
+        <h2>Welcome to CompNet!</h2>
+        <p>
+          Your local partner for all computer repair and peripheral needs. We
+          specialize in fixing and selling computer components and peripherals.
+          Whether you're dealing with a broken keyboard, a malfunctioning mouse,
+          or need a component upgrade, we've got you covered.
+        </p>
+        <a href="contact.html" class="btn">Get in Touch</a>
+      </section>
+      
+      <h2>Goods</h2>
+      
+      <div class="random-goods">
+        <script>
+          function Product(link, name, src, alt, p) { this.link = link; this.name = name; this.src = src; this.alt = alt; this.p = p; }
+          const goods = [
+            new Product("./products/pcs/pc1.html", "Name1", "./products/pcs/img/1.png", "Image of Name1", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/pcs/pc2.html", "Name2", "./products/pcs/img/2.jpg", "Image of Name2", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/pcs/pc3.html", "Name3", "./products/pcs/img/3.jpg", "Image of Name3", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/pcs/pc4.html", "Name4", "./products/pcs/img/4.jpg", "Image of Name4", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/pcs/pc5.html", "Name5", "./products/pcs/img/5.jpg", "Image of Name5", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/pcs/pc6.html", "Name6", "./products/pcs/img/6.jpg", "Image of Name6", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/laptops/lap1.html", "Name7", "./products/laptops/img/1.jpg", "Image of Name7", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/laptops/lap2.html", "Name8", "./products/laptops/img/2.jpg", "Image of Name8", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/laptops/lap3.html", "Name9", "./products/laptops/img/3.jpg", "Image of Name9", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/laptops/lap4.html", "Name10", "./products/laptops/img/4.jpg", "Image of Name10", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/laptops/lap5.html", "Name11", "./products/laptops/img/5.jpg", "Image of Name11", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
+            new Product("./products/laptops/lap6.html", "Name12", "./products/laptops/img/6.jpg", "Image of Name12", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.")
+          ];
+          
+          const arr = new Set()
+          while (arr.size < 6) { arr.add(Math.floor(Math.random() * goods.length)) }
+          [...arr].forEach(num => { document.write(`
+              <a href="${goods[num].link}">
+                <h3>${goods[num].name}</h3>
+                <img src="${goods[num].src}" alt="${goods[num].alt}" />
+                <p>${goods[num].p}</p>
+              </a>
+          `)});
+        </script>
+      </div>
+    </main>
+    
+    <footer>
+      <p>CompNet © 2025. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Test site" />
+    <title>CompNet - Homepage</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script src="../../scripts/script.js" defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <a href="#main-content">Skip to main content</a>
+      
+      <div class="logo">
+        <img src="../../img/logo.png" alt="CompNet Logo" />
+      </div>
+      
+      <button id="open-nav-btn" onclick="openNav()" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" /></svg>
+      </button>
+      
+      <nav id="nav">
+        <ul>
+          <li>
+            <button id="close-nav-btn" onclick="closeNav()" aria-label="Close menu">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
+            </button>
+          </li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../pcs.html">PCs</a></li>
+          <li><a href="../../laptops.html">Laptops</a></li>
+          <li><a href="../../services.html">Services</a></li>
+          <li><a href="../../policies.html">Policies</a></li>
+          <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div id="overlay" onclick="closeNav()" aria-hidden="true"></div>
+    </header>
+    
+    <main id="main-content">
+      <section>
+        <h2>Name11</h2>
+        
+        <div class="goods">
+          <img src="img/5.jpg" alt="Image of Name11" style="width: min(70vw, 430px);"/>
+          
+          <p style="width: min(100vw, 440px);">
+            ASUS TUF Gaming A15 15.6" Gaming Laptop - AMD Ryzen 7, RTX 3050, 1 TB SSD<br>
+            AMD Ryzen 7 7435HS Processor<br>
+            RAM: 16 GB / Storage: 1 TB SSD<br>
+            Graphics: NVIDIA GeForce RTX 3050 4 GB<br>
+            Full HD screen / 144 Hz<br>
+            Battery life: Up to 6.5 hours<br>
+          </p>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>CompNet © 2025. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
