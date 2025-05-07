@@ -1,73 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Test site" />
-    <title>CompNet - Policies</title>
+    <meta name="description" content="Read CompNet's privacy policy and terms of service for computer repairs and sales." />
+    <title>Our Policies - CompNet</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./scripts/script.js" defer></script>
-  </head>
-
-  <body>
-    <header>
-      <a href="#main-content">Skip to main content</a>
-      
-      <div class="logo">
-        <img src="./img/logo.png" alt="CompNet Logo" />
-      </div>
-      
-      <button id="open-nav-btn" onclick="openNav()" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.png" alt="CompNet Logo" /></a>
+    </div>
+    <button id="open-nav-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" /></svg>
-      </button>
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li>
+          <button id="close-nav-btn" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
+          </button>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pcs.html">PCs</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="policies.html" aria-current="page">Policies</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-title">
+      <h1>Our Policies</h1>
+      <p>Please read our policies carefully. By using our website and services, you agree to these terms.</p>
+    </section>
+
+    <article id="privacy" class="policy-section">
+      <h2>Privacy Policy</h2>
+      <p><strong>Last Updated: May 7, 2025</strong></p>
+      <p>CompNet ("us", "we", or "our") operates the CompNet website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
       
-      <nav id="nav">
-        <ul>
-          <li>
-            <button id="close-nav-btn" onclick="closeNav()" aria-label="Close menu">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
-            </button>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pcs.html">PCs</a></li>
-          <li><a href="laptops.html">Laptops</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="policies.html" aria-current="page">Policies</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+      <h3>Information Collection and Use</h3>
+      <p>We collect several different types of information for various purposes to provide and improve our Service to you. This may include:</p>
+      <ul>
+        <li><strong>Personal Data:</strong> While using our Service, especially the contact form, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to: Email address, First name and last name, Phone number, Address (if provided for service).</li>
+        <li><strong>Usage Data:</strong> We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</li>
+        <li><strong>Tracking & Cookies Data:</strong> We use cookies and similar tracking technologies to track the activity on our Service and we hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</li>
+      </ul>
+
+      <h3>Use of Data</h3>
+      <p>CompNet uses the collected data for various purposes:</p>
+      <ul>
+        <li>To provide and maintain our Service</li>
+        <li>To notify you about changes to our Service</li>
+        <li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+        <li>To provide customer support</li>
+        <li>To gather analysis or valuable information so that we can improve our Service</li>
+        <li>To monitor the usage of our Service</li>
+        <li>To detect, prevent and address technical issues</li>
+      </ul>
+       <h3>Data Retention</h3>
+        <p>CompNet will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+
+      <h3>Your Data Protection Rights Under GDPR</h3>
+      <p>If you are a resident of the European Economic Area (EEA), you have certain data protection rights. CompNet aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
+      <p><em>(Further sections on Data Transfer, Disclosure of Data, Security of Data, Service Providers, Links to Other Sites, Children's Privacy, Changes to This Privacy Policy, Contact Us for Privacy Concerns would follow here.)</em></p>
+    </article>
+
+    <article id="terms" class="policy-section">
+      <h2>Repair Terms & Conditions</h2>
+      <p><strong>Last Updated: May 7, 2025</strong></p>
+      <p>These Terms and Conditions govern the repair services ("Services") provided by CompNet ("Company", "we", "us", "our") to you ("Customer", "you").</p>
       
-      <div id="overlay" onclick="closeNav()" aria-hidden="true"></div>
-    </header>
+      <h3>1. Service Authorisation and Estimates</h3>
+      <p>Upon bringing your device for repair, we will perform an initial diagnosis. A non-refundable diagnostic fee may be charged for this service, which will typically be credited towards the final repair cost if you choose to proceed. We will provide you with an estimate for the repair. This estimate is not a guaranteed price and may change if further issues are discovered during the repair process. We will seek your approval for any additional charges before proceeding.</p>
+
+      <h3>2. Turnaround Time</h3>
+      <p>We will make reasonable efforts to complete repairs within the estimated timeframe. However, turnaround times are estimates and are not guaranteed, as delays may occur due to parts availability or unforeseen complexities. We will keep you informed of any significant delays.</p>
+      
+      <h3>3. Customer Data</h3>
+      <p>It is your responsibility to back up all data on your device(s) before submitting them for repair. While we take utmost care, CompNet is not responsible for any loss, corruption, or breach of data that may occur during the repair process. We may need to perform a factory reset or software reinstallation, which will erase all data. We strongly recommend you back up your data prior to service.</p>
+
+      <h3>4. Warranty</h3>
+      <p>We offer a 90-day warranty on parts replaced and labour performed for the specific repair conducted. This warranty does not cover new problems unrelated to the original repair, damage caused by misuse, accidents, liquid damage, software issues introduced after the repair, or issues arising from pre-existing conditions not disclosed at the time of service. Warranty is void if the device is opened or tampered with by anyone other than CompNet technicians after our service.</p>
+      
+      <h3>5. Payment</h3>
+      <p>Full payment is due upon completion of the Services and before the repaired device is returned to you. We accept various payment methods, which will be communicated at the time of service. For certain repairs or parts orders, a deposit may be required.</p>
+      
+      <h3>6. Abandoned Devices</h3>
+      <p>Devices left with CompNet for more than 60 days after notification of completion or non-repair (if applicable) without payment or collection arrangements will be considered abandoned. CompNet reserves the right to dispose of or sell abandoned devices to recover costs, without further liability to you.</p>
+
+      <p><em>(Further sections on Liability, Governing Law would follow here.)</em></p>
+    </article>
     
-    <main id="main-content">
-      <section>
-        <h2>About Us</h2>
-        <p>
-          TechFix was founded with the mission to provide affordable and
-          high-quality repair services for all kinds of computer peripherals and
-          components. We are a team of certified technicians with years of
-          experience in hardware and software repair.
-        </p>
+    <article id="returns" class="policy-section">
+      <h2>Returns & Refund Policy (for Products Sold)</h2>
+      <p><strong>Last Updated: May 7, 2025</strong></p>
+      <p>This policy applies to physical products purchased directly from CompNet.</p>
+      <h3>Returns</h3>
+      <p>You have 14 calendar days to return an item from the date you received it. To be eligible for a return, your item must be unused and in the same condition that you received it. Your item must be in the original packaging. Your item needs to have the receipt or proof of purchase.</p>
+      <h3>Refunds</h3>
+      <p>Once we receive your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you on the status of your refund after inspecting the item. If your return is approved, we will initiate a refund to your original method of payment. You will receive the credit within a certain amount of days, depending on your card issuer's policies.</p>
+      <h3>Shipping</h3>
+      <p>You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund if we arrange collection.</p>
+      <h3>Exceptions</h3>
+      <p>Software, custom-built PCs (once work has commenced with your approval), and special order items may not be eligible for return or may be subject to a restocking fee. This will be communicated at the time of purchase.</p>
+    </article>
 
-        <h3>Our Mission</h3>
-        <p>
-          To deliver fast, reliable, and cost-effective solutions for all
-          computer and peripheral repair needs. We aim to help our customers get
-          their devices working as efficiently as possible.
-        </p>
+  </main>
 
-        <h3>Our Team</h3>
-        <p>
-          Our team consists of experts with in-depth knowledge of computer
-          hardware, peripherals, and troubleshooting. We are here to ensure your
-          devices are back to full functionality.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>CompNet © 2025. All rights reserved.</p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; <span id="current-year">2025</span> CompNet. All rights reserved.</p>
+    <p><a href="policies.html#privacy">Privacy Policy</a> | <a href="policies.html#terms">Terms of Service</a></p>
+  </footer>
+</body>
 </html>

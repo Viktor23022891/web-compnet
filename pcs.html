@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Test site" />
-    <title>CompNet - PCs</title>
+    <meta name="description" content="Explore CompNet's range of desktop PCs, from high-performance gaming rigs to reliable office workstations and custom builds." />
+    <title>Desktop PCs - CompNet</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./scripts/script.js" defer></script>
-  </head>
-  
-  <body>
-    <header>
-      <a href="#main-content">Skip to main content</a>
-      
-      <div class="logo">
-        <img src="./img/logo.png" alt="CompNet Logo" />
-      </div>
-      
-      <button id="open-nav-btn" onclick="openNav()" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.png" alt="CompNet Logo" /></a>
+    </div>
+    <button id="open-nav-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" /></svg>
-      </button>
-      
-      <nav id="nav">
-        <ul>
-          <li>
-            <button id="close-nav-btn" onclick="closeNav()" aria-label="Close menu">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
-            </button>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pcs.html" aria-current="page">PCs</a></li>
-          <li><a href="laptops.html">Laptops</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="policies.html">Policies</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      
-      <div id="overlay" onclick="closeNav()" aria-hidden="true"></div>
-    </header>
-    
-    <main id="main-content">
-      <h2>PCs</h2>
-      
-      <div class="goods">
-        <script>
-          function Product(link, name, src, alt, p) { this.link = link; this.name = name; this.src = src; this.alt = alt; this.p = p; }
-          const goods = [
-            new Product("./products/pcs/pc1.html", "Name1", "./products/pcs/img/1.png", "Image of Name1", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
-            new Product("./products/pcs/pc2.html", "Name2", "./products/pcs/img/2.jpg", "Image of Name2", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
-            new Product("./products/pcs/pc3.html", "Name3", "./products/pcs/img/3.jpg", "Image of Name3", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
-            new Product("./products/pcs/pc4.html", "Name4", "./products/pcs/img/4.jpg", "Image of Name4", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
-            new Product("./products/pcs/pc5.html", "Name5", "./products/pcs/img/5.jpg", "Image of Name5", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
-            new Product("./products/pcs/pc6.html", "Name6", "./products/pcs/img/6.jpg", "Image of Name6", "Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an."),
-          ];
-          
-          const arr = [...Array(goods.length).keys()];
-          arr.forEach(num => { document.write(`
-            <a href="${goods[num].link}">
-              <h3>${goods[num].name}</h3>
-              <img src="${goods[num].src}" alt="${goods[num].alt}" />
-              <p>${goods[num].p}</p>
-            </a>
-          `)});
-        </script>
-      </div>
-    </main>
-    
-    <footer>
-      <p>CompNet © 2025. All rights reserved.</p>
-    </footer>
-  </body>
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li>
+          <button id="close-nav-btn" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
+          </button>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pcs.html" aria-current="page">PCs</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="policies.html">Policies</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+    <section class="product-listing">
+      <h1>Desktop PCs</h1>
+      <p>Discover our range of desktop computers, from high-performance gaming rigs to reliable office workstations and compact home PCs. All systems can be customized to your needs.</p>
+      <div class="product-grid goods">
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year">2025</span> CompNet. All rights reserved.</p>
+    <p><a href="policies.html#privacy">Privacy Policy</a> | <a href="policies.html#terms">Terms of Service</a></p>
+  </footer>
+</body>
 </html>

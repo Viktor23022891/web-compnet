@@ -1,85 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Test site" />
-    <title>CompNet - Services</title>
+    <meta name="description" content="CompNet offers comprehensive computer and laptop repair services, upgrades, virus removal, data recovery, and component sales." />
+    <title>Our Services - CompNet</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./scripts/script.js" defer></script>
-  </head>
-
-  <body>
-    <header>
-      <a href="#main-content">Skip to main content</a>
-      
-      <div class="logo">
-        <img src="./img/logo.png" alt="CompNet Logo" />
-      </div>
-      
-      <button id="open-nav-btn" onclick="openNav()" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.png" alt="CompNet Logo" /></a>
+    </div>
+    <button id="open-nav-btn" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" /></svg>
-      </button>
-      
-      <nav id="nav">
-        <ul>
-          <li>
-            <button id="close-nav-btn" onclick="closeNav()" aria-label="Close menu">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
-            </button>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pcs.html">PCs</a></li>
-          <li><a href="laptops.html">Laptops</a></li>
-          <li><a href="services.html" aria-current="page">Services</a></li>
-          <li><a href="policies.html">Policies</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      
-      <div id="overlay" onclick="closeNav()" aria-hidden="true"></div>
-    </header>
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li>
+          <button id="close-nav-btn" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" /></svg>
+          </button>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pcs.html">PCs</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
+        <li><a href="policies.html">Policies</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div id="overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-title">
+      <h1>Our Services</h1>
+      <p>At CompNet, we offer a comprehensive range of repair, upgrade, and support services for your computers and peripherals. Our experienced technicians are here to help you get the most out of your technology.</p>
+    </section>
+
+    <section id="repair-services" class="service-category">
+      <h2><img src="./img/icons/hardware-repair-icon.svg" alt="Toolbox icon" class="category-icon"> Hardware Repair Services</h2>
+      <div class="service-list">
+        <article class="service-item-detailed">
+          <h3>PC & Laptop Repair</h3>
+          <p>Is your computer running slow, not turning on, or making strange noises? We diagnose and repair all types of issues for desktops and laptops of all brands. This includes motherboard repair/replacement, screen replacement, power supply issues, overheating problems, and more.</p>
+          <p><strong>Common Repairs:</strong> Broken screens, failing hard drives, faulty RAM, keyboard/trackpad issues, charging port problems.</p>
+          <p><em>Price: Starting from £45 (Diagnostics fee may apply, redeemable against repair cost)</em></p>
+        </article>
+        <article class="service-item-detailed">
+          <h3>Peripheral Repair</h3>
+          <p>Don't let a faulty peripheral slow you down. We repair a variety of computer accessories.</p>
+          <p><strong>Includes:</strong> Keyboard repair (key replacement, cleaning), mouse repair (button issues, sensor problems), printer troubleshooting and basic repairs, monitor diagnostics (e.g., dead pixels, connection issues).</p>
+          <p><em>Price: Starting from £25</em></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="upgrades" class="service-category">
+      <h2><img src="./img/icons/performance-icon.svg" alt="Rocket icon" class="category-icon"> Upgrades & Installations</h2>
+      <div class="service-list">
+        <article class="service-item-detailed">
+          <h3>Performance Upgrades</h3>
+          <p>Give your computer a speed boost! We offer component upgrades to enhance performance and extend the life of your machine.</p>
+          <p><strong>Popular Upgrades:</strong> SSD (Solid State Drive) installation for significantly faster boot times and application loading, RAM (Memory) upgrades for better multitasking, Graphics Card upgrades for improved gaming and creative work.</p>
+          <p><em>Price: Starting from £50 (plus cost of components)</em></p>
+        </article>
+        <article class="service-item-detailed">
+          <h3>Software Installation & Setup</h3>
+          <p>We can help you install and configure operating systems (Windows, macOS, Linux), productivity software, antivirus programs, and other applications. We also offer new PC/laptop setup services.</p>
+          <p><em>Price: Starting from £30</em></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="software-data-services" class="service-category">
+      <h2><img src="./img/icons/software-data-icon.svg" alt="Data icon" class="category-icon"> Software & Data Services</h2>
+      <div class="service-list">
+        <article class="service-item-detailed">
+          <h3>Virus & Malware Removal</h3>
+          <p>Protect your valuable data and privacy. Our technicians are skilled in removing viruses, spyware, malware, and other malicious software to restore your computer's security and performance.</p>
+          <p><em>Price: Starting from £40</em></p>
+        </article>
+        <article class="service-item-detailed">
+          <h3>Data Recovery & Backup Solutions</h3>
+          <p>Lost important files? We offer data recovery services for failing hard drives and accidental deletion (success not guaranteed). We can also help you set up robust data backup solutions to prevent future data loss.</p>
+          <p><em>Price: Data recovery from £70 (evaluation fee may apply), Backup setup from £35</em></p>
+        </article>
+      </div>
+    </section>
     
-    <main id="main-content">
-      <section>
-        <h2>Our Services</h2>
-        <p>
-          We offer a wide range of repair and upgrade services for your
-          computers and peripherals:
-        </p>
+    <section class="pricing-policy">
+        <h2>Our Pricing Approach</h2>
+        <p>We believe in transparent and fair pricing. For many common services, we offer fixed rates. For more complex issues or diagnostics, an initial assessment fee may apply, which is often waived if you proceed with the repair. We will always provide you with a detailed quote before any work begins.</p>
+        <p><strong>All repairs come with a 90-day warranty on parts and labour.</strong></p>
+        <a href="contact.html" class="btn btn-primary">Request a Detailed Quote</a>
+    </section>
+  </main>
 
-        <h3>Repair Services</h3>
-        <ul>
-          <li>
-            <strong>Peripheral Repair:</strong> We repair keyboards, mice,
-            printers, monitors, and more.
-          </li>
-          <li>
-            <strong>Component Repair:</strong> Repair for internal components
-            like RAM, hard drives, and power supplies.
-          </li>
-          <li>
-            <strong>Diagnostic Services:</strong> Comprehensive diagnostics to
-            identify issues with your devices.
-          </li>
-          <li>
-            <strong>Upgrade Services:</strong> Need more power? We offer RAM and
-            SSD upgrades to boost performance.
-          </li>
-        </ul>
-
-        <h3>Pricing</h3>
-        <ul>
-          <li>Peripheral Repair: $30 - $100</li>
-          <li>Component Repair: $50 - $150</li>
-          <li>Diagnostic Services: $20</li>
-          <li>Upgrade Services: From $60 (parts not included)</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>CompNet © 2025. All rights reserved.</p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; <span id="current-year">2025</span> CompNet. All rights reserved.</p>
+    <p><a href="policies.html#privacy">Privacy Policy</a> | <a href="policies.html#terms">Terms of Service</a></p>
+  </footer>
+</body>
 </html>
